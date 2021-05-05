@@ -1,0 +1,121 @@
+.header { 
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    background-color: $pillGreen;
+    padding-top: 1.25rem;
+    nav {
+        position: relative;
+        height: 60px;
+        
+        .header_logo {
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1.7;
+        }
+        
+        .desk-menu {
+            a {
+                transition: border-bottom 140ms ease-in-out;
+                
+                &:not(:last-child) {
+                    margin-right: 1.25rem;
+                }
+                    
+                    &:hover {
+                        border-bottom: 2px solid white;
+                        padding-bottom: 5px;
+                    }
+                    
+                }
+                
+            }
+            
+        .header-hamburger {
+            margin-top: 8px;
+            padding: 8px 12px;
+                
+            span {
+                    display: block;
+              width: 21px;
+              height: 1.9px;
+              background-color: white;
+              transition: all 250ms ease-in-out;
+              transform-origin: 2px 1px;
+        
+              &:not(:last-child) {
+                margin-bottom: 4px;
+              }
+            }
+
+            &.open {
+                span:first-child {
+                    transform: rotate(45deg);
+                }
+    
+                span:nth-child(2) {
+                    opacity: 0;
+                }
+    
+                span:last-child {
+                    transform: rotate(-45deg);   
+                }
+                
+            }
+        }
+
+        
+
+        .mobile-menu {
+            background-color: $pillWhite;
+            position: absolute;
+            width: 100%;
+            top: 60px;
+            visibility: hidden;
+            transition: all 5ms ease-in-out;
+            // border: 2px solid $pillGold;
+            padding: 10px 10px;
+            // display: flex;
+            
+            a {
+                display: block;
+                color: $pillGreen;
+                font-size: 1rem;
+                font-weight: 400;
+                transition: border-bottom 100ms ease-in-out;
+        
+                &:not(:last-child) {
+                    margin-bottom: 8px;
+                }
+
+                &:hover {
+                    border-bottom: 2px solid $pillGreen;
+                    padding-bottom: 3px;
+                }
+            }
+
+            &.open {
+                visibility: visible;
+                // add bottom margin
+            }
+        }
+        
+    }
+}
+
+@media only screen and (min-width: 1040px) {
+    .header  {
+        nav .header_logo{
+            font-size: 1.25rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 770px) {
+    header nav {
+        .desk-menu {
+            font-size: 1.1rem;
+        }
+    }
+}

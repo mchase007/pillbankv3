@@ -1,0 +1,30 @@
+.easy-nav {
+    
+    div {
+        // border: 2px solid $pillWhite;
+        // height: 144px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 40px 20px;
+
+        a {
+            color: $pillGreen;
+            // color: hsl(181, 77%, 25%);
+            text-decoration: none;
+            font-weight: 700;
+            text-align: center;
+            font-size: 2.1rem;
+            line-height: 48px;
+            display: inline-block;
+            padding-right: 5px;
+
+        }
+
+
+
+        a:hover {
+            cursor: pointer;
+        }
+    }
+
+}

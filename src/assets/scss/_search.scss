@@ -1,0 +1,78 @@
+.search-container {
+    // border: 2px solid blue;
+    width: 84%;
+    max-width: 350px;
+    margin: 0 auto;
+    height: 150px;
+    position: relative;
+}
+
+.container-2 {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.search-bar {
+    width: 78%;
+    height: 40px;
+    padding: 10px 10px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+    font: inherit;
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+    z-index: 0;
+
+    &:focus {
+        border: 2px solid $pillGold;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+}
+
+.drug-items {
+    width: 90%;
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+
+.drug-item {
+    font-size: 0.98rem;
+    text-align: left;
+    cursor: pointer;
+    padding-bottom: 3px;
+
+}
+
+
+.reset-button {
+    /* position: absolute; */
+    background-color: white;
+    width: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.clear-button {
+    background: hsl(181, 77%, 25%);
+    color: white;
+    font-weight: 400;
+    border: 1.5px solid hsl(0, 0%, 100%);
+    padding: 11px 12px 0px 12px;
+    cursor: pointer;
+    font-size: 0.78rem;
+    font-weight: 400;
+    height: 40px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+    &:active {
+        background-color: white;
+        color: $pillGold;
+        font-weight: 700;
+    }
+
+}
