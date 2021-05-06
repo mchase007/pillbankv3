@@ -82,6 +82,9 @@ export default {
         width: 100%;
         margin: 0 auto;
     }
+    .container {
+        padding-bottom: 20px;
+    }
     .drug-details {
         width: 95%;
         max-width: 750px;

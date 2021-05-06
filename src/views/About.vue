@@ -54,15 +54,16 @@ export default {
     width: 95%;
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: -50px;
       
     p {
         font-size: 1.25rem;
         line-height: 30px;
         max-width: 500px;
     }
-    &.open {
-        padding-top: 70px;
-    }
+    // &.open {
+        // padding-top: 70px;
+    // }
     h1 {
       font-size: 2rem;
       font-weight: 400;
