@@ -5,14 +5,15 @@
     <section class="about flex flex-fd-c flex-jc-c" :class="{open: isOpen}">
     <h1 class="title">Hi,</h1>
     <p class="">
-      Pillbank is for our curious reader who may not be medically savvy.
-      <br><br>
-      Caring clinical practitioners have decided to compile, exactly like this copy, a simple and short yet concise explantion of how your drugs work.
-      <br><br>
-      We hope this helps you appreciate and follow the counsel given on taking your drugs right for better treatment outcomes.
+      Pillbank is a simplified resource with a primary focus on:
     </p>
+    <ul class="focus-list">
+      <li>You (the non-clinician reader)</li>
+      <li>What medications do</li>
+      <li>How medications work</li>
+    </ul>
     <p class="">
-      Thanks.
+      to improve health literacy, medication adherence and health outcomes.
     </p>
   </section>
   </section>
@@ -64,6 +65,17 @@ export default {
     }
     h1 {
       font-size: 2rem;
+      font-weight: 400;
+    }
+
+    .focus-list {
+      margin-top: -8px;
+      margin-bottom: -8px;
+    }
+
+    .focus-list li{
+      font-size: 1.18rem;
+      // list-style: none;
     }
   }
 
@@ -71,6 +83,11 @@ export default {
     .about p {
       font-size: 1.35rem;
       line-height: 30px;
+    }
+
+    .focus-list li{
+      font-size: 1.23rem;
+      // list-style: none;
     }
 }
 
