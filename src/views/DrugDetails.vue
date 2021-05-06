@@ -101,7 +101,7 @@ export default {
         border: 1.5px solid hsl(181, 77%, 25%);
         border-radius: 2.5px;
         color: hsl(181, 77%, 25%);
-        padding: 5px;
+        padding: 7px;
         // margin-top: 100px;
         cursor: pointer;    
     }
@@ -128,7 +128,7 @@ export default {
     
     p {
         color: hsl(181, 77%, 25%);
-        font-size: 1rem;
+        font-size: 1.14rem;
         line-height: 24px;
         padding-bottom: 10px;
     }
@@ -162,7 +162,7 @@ export default {
     @media only screen and (min-width: 770px) {
     .drug-details div {
         p{
-            font-size: 1.15rem;
+            font-size: 1.2rem;
             padding-bottom: 10px;
         }
     }

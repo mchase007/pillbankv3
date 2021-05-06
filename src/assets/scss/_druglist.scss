@@ -1,19 +1,19 @@
 .drug-list {
-    width: 95%;
-    max-width: 1200px;
-    margin: 0 auto;
-    span {
-        color: $pillGreen;
-        // padding-left: 20px;
-        font-size: 1.32rem;
-    }
-    p {
-        // border: 2px solid $pillGreen;
-        color: $pillGreen;
-        // padding-left: 20px;
-        margin-bottom: -50px;
-        font-size: 1.25rem;
-        text-transform: capitalize;
-        display: inline-block;
-    }
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  span {
+    color: $pillGreen;
+    // padding-left: 20px;
+    font-size: 1.35rem;
+  }
+  p {
+    // border: 2px solid $pillGreen;
+    color: $pillGreen;
+    // padding-left: 20px;
+    margin-bottom: -50px;
+    font-size: 1.25rem;
+    text-transform: capitalize;
+    display: inline-block;
+  }
 }
