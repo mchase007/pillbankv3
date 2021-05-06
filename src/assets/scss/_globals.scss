@@ -2,7 +2,6 @@
 html {
   font-size: 16px; // lets user control zoom level in browser
   box-sizing: border-box;
-
 }
 
 *,
@@ -23,6 +22,7 @@ body {
   width: 100%;
   // max-width: 700px;
   text-rendering: optimizeLegibility;
+  height: 100vh;
 }
 
 a,
@@ -40,7 +40,6 @@ a:hover {
 //flexbox helper classes
 
 .flex {
-
   display: flex;
 
   &-jc-sb {

@@ -9,27 +9,31 @@
     :map-results="false"
     placeholder="Aspirin"
     class="search-bar"
+    ref="searchBar"
     @fuse-results="searchResultsTask"
     :defaultAll="false" />
 
     <!-- <input class="button" type="button" value="x"> -->
-    <div class="clear-button">CLEAR</div>
+    <!-- <div @click="reset" class="clear-button">CLEAR</div> -->
 
     </div>
+    <div class="drug-items">
     <div v-for="(drugg, i) in searchResults"
         :key="i"
-        class="drug-items">
+        class="">
         <router-link :to="{name: 'DrugDetails', params: {id: drugg.item.id, drugName: drugg.item.drug}}" >
             <div class="drug-item">{{drugg.item.drug}}</div>
         </router-link>
 
         
     </div>
+
+    </div>
     
 </div>
   
 </template>
-  
+
 <script>
 import VueFuse from 'vue-fuse'
 import json from '@/assets/data/db.json';
@@ -71,7 +75,10 @@ export default {
             console.log(this.drugSearch.toLowerCase())
         },
         reset() {
-            this.drugSearch = ''
+            console.log(this.$refs.searchBar)
+            this.$refs.searchBar = ''
+            // console.log(this.drugSearch)
+
         },
         searchResultsTask(r) {
             this.searchResults = r
