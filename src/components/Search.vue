@@ -20,7 +20,7 @@
     <div class="drug-items">
     <div v-for="(drugg, i) in searchResults"
         :key="i"
-        class="">
+        class=""> 
         <router-link :to="{name: 'DrugDetails', params: {id: drugg.item.id, drugName: drugg.item.drug}}" >
             <div class="drug-item">{{drugg.item.drug}}</div>
         </router-link>

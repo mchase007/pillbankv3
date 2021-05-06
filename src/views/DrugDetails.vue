@@ -73,7 +73,7 @@ export default {
     
     $pillWhite: hsl(181, 77%, 97%);
     $pillGreen: hsl(181, 77%, 25%);
-    
+     
     .hero_container {
         background: $pillGreen;
     }
