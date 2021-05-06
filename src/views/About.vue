@@ -45,21 +45,19 @@ export default {
 
   .container {
     background: $pillGreen;
-    // width: 95%;
-    max-width: 1200px; 
   }
 
   .about {
-    max-width: 500px;
     background-color: hsl(181, 77%, 25%);
     height: 100vh;
-    // margin: 0 auto;
-    // margin-top: -50px;
-    padding-left: 0.9rem;
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
       
     p {
         font-size: 1.25rem;
         line-height: 30px;
+        max-width: 500px;
     }
     &.open {
         padding-top: 70px;
